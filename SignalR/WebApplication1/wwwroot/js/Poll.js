@@ -1,4 +1,4 @@
-﻿"use strict";
+﻿﻿"use strict";
 
 var connection = new signalR.HubConnectionBuilder().withUrl("/pollHub").build();
 var chartBlock = '\u25A3';
