@@ -1,5 +1,5 @@
-﻿using System;
-using Microsoft.AspNetCore.SignalR;
+﻿using Microsoft.AspNetCore.SignalR;
+using System.Threading.Tasks;
 
 
 namespace SignalR.Hubs
@@ -8,7 +8,7 @@ namespace SignalR.Hubs
     {
         public async Task SendMessage(string user, string message, string myChannelId, string myChannelVal)
         {
-            await Clients.All.SendAsync("ReceiveMessae", user, message, myChannelVal).ConfigureAwait(false);
+            await Clients.All.SendAsync("ReceiveMessage", user, message, myChannelId,myChannelVal).ConfigureAwait(false);
         }
     }
 }
