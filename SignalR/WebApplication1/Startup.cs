@@ -13,8 +13,8 @@ namespace SignalR
 }
 
 
-namespace CursoIntroSignalRYoutube
-{
+namespace SingnalRStartup
+{ 
     public class Startup
     {
         public Startup(IConfiguration configuration)
